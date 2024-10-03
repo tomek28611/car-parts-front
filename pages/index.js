@@ -115,7 +115,7 @@ const clearFilter = () => {
             {products.map((product) => (
 
 
-              <div className="bg-white shadow rounded-lg overflow-hidden cursor-pointer">
+              <div key={product} className="bg-white shadow rounded-lg overflow-hidden cursor-pointer">
                 <img
                   src={product.images[0]}
                   alt={product.title}
